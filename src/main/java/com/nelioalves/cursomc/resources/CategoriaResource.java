@@ -23,8 +23,8 @@ public class CategoriaResource {
 	
 	@RequestMapping(value="/{id}", method=RequestMethod.GET)
 	public ResponseEntity<?> buscar(@PathVariable Integer id) {
-		Categoria obj = service.buscar(id);
 		
+		Categoria obj = service.buscar(id);
 		return ResponseEntity.ok().body(obj);
 
 	}
